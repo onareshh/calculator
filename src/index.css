@@ -1,103 +1,116 @@
 body {
   margin: 0;
-  background-color: #000000;
-  color: #000000;
-  font-family: 'Open Sans',sans-serif;
+  background-color: #002200; /* Dark green background */
+  color: #e0f2e9; /* Light green text */
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a{
+a {
   text-decoration: none;
+  color: #e0f2e9; /* Light green for links */
 }
 
-i{
+i {
   font-size: 1.5rem;
 }
 
-#main-container{
+#main-container {
   text-align: center;
   margin-top: 3rem;
 }
 
-.inner-container{
-  margin-inline:2rem;
+.inner-container {
+  margin-inline: 2rem;
   margin-block-start: 10rem;
   margin-block-end: 5rem;
-  background-color: #ffebcd;
-  color: #000000;
-  padding:3rem;
-  background-color: #ffebcd;
-  border-radius:2rem;
-  border: 0.5rem ridge #ffd700;
+  background-color: #004d00; /* Darker green background */
+  color: #e0f2e9; /* Light green text */
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 0.5rem ridge #008000; /* Green border */
 }
 
-#form-container{
+#form-container {
   margin-block-start: 7rem;
-  margin-block-end:3rem;
+  margin-block-end: 3rem;
   margin-inline: 2rem;
-  padding:3rem;
-  background-color: #ffebcd;
-  border-radius:2rem;
-  border: 0.5rem ridge #ffd700;
+  padding: 3rem;
+  background-color: #004d00; /* Darker green background */
+  border-radius: 2rem;
+  border: 0.5rem ridge #008000; /* Green border */
 }
 
-#dept-list{
-  padding:5rem;
+#dept-list {
+  padding: 5rem;
   list-style: none;
-  
 }
 
-#sem-list{
-  padding:5rem;
+#sem-list {
+  padding: 5rem;
   list-style-type: none;
 }
 
-
-.img{
-  max-width:8rem;
+.img {
+  max-width: 8rem;
   max-height: 8rem;
 }
 
-.img:hover{
+.img:hover {
   max-width: 9rem;
   max-height: 9rem;
 }
 
-.dept-list-item{
-  padding:2rem;
-  border: 0.5rem ridge #ffd700;
+.dept-list-item {
+  padding: 2rem;
+  border: 0.5rem ridge #008000; /* Green border */
   position: relative;
   text-align: center;
-  margin-bottom:2rem;
-  border-radius:1rem;
-  box-shadow: 1rem 1rem 2rem rgba(228, 225, 225, 0.2);
-  background-color: #ffebcd;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 100, 0, 0.2); /* Dark green shadow */
+  background-color: #004d00; /* Darker green background */
 }
 
-.sem-list-item{
-  padding:2rem;
-  border: 0.5rem ridge #ffd700;
+.sem-list-item {
+  padding: 2rem;
+  border: 0.5rem ridge #008000; /* Green border */
   position: relative;
   text-align: center;
-  margin-bottom:2rem;
-  border-radius:1rem;
-  box-shadow: 1rem 1rem 2rem rgba(228, 225, 225, 0.2);
-  background-color: #ffebcd;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 100, 0, 0.2); /* Dark green shadow */
+  background-color: #004d00; /* Darker green background */
 }
 
-.form-inner-container{
-  margin-inline-start:10rem;
+.form-inner-container {
+  margin-inline-start: 10rem;
 }
 
-.dropdown-menu{
-  background-color: #f8e5c9;
+.dropdown-menu {
+  background-color: #002200; /* Dark green background */
+  color: #e0f2e9; /* Light green text */
+  padding: 1rem; /* Add some padding if needed */
+  border-radius: 0.5rem; /* Optional: add border-radius for rounded corners */
 }
-.bg-almond{
-  background-color: #ffebcd;
+
+.dropdown-menu a {
+  color: #e0f2e9; /* Light green text for links in the dropdown */
 }
-.not-found{
+
+.dropdown-menu a:hover {
+  color: #a4d2a1; /* Lighter green for hover effect */
+}
+
+
+.bg-almond {
+  background-color: #004d00; /* Darker green background */
+}
+
+.not-found {
   margin-top: 10rem;
+  color: #e0f2e9; /* Light green text for 'not found' message */
 }
