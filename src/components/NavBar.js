@@ -9,7 +9,7 @@ function NavBar() {
         <nav
             className="navbar fixed-top navbar-expand-lg navbar-light bg-almond"
             style={{
-                border: '0.25rem solid #008000', /* Green border */
+                border: '0.5rem solid #008000', /* Green border */
                 color: 'white', /* White text color */
             }}
         >
@@ -34,17 +34,16 @@ function NavBar() {
                             Home <i className="bi-house-door"></i>
                         </Link>
                         <div className="nav-item dropdown">
-                            <a
+                            <button
                                 className="nav-link active dropdown-toggle"
-                                href="#"
+                                type="button"
                                 id="navbarDropdown"
-                                role="button"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
-                                style={{ color: 'white' }}
+                                style={{ color: 'white', background: 'none', border: 'none' }}
                             >
                                 Departments <i className="bi-card-list"></i>
-                            </a>
+                            </button>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 {departments.map((dept) => (
                                     <li key={dept.id}>
