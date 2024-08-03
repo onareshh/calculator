@@ -11,7 +11,6 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
-        
         <Route path="/:deptid/sem/:semid" exact>
           <GpaCalculatePage />
         </Route>
