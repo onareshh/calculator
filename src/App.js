@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import IndexPage from './pages/IndexPage';
 import SemestersPage from './pages/SemestersPage';
 import GpaCalculatePage from './pages/GpaCalculatePage';
@@ -8,14 +8,23 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <>
+    <Router>
       <NavBar />
-      <Routes>
-        <Route path="/:deptid/sem/:semid" element={<GpaCalculatePage />} />
-        <Route path="/:deptid" element={<SemestersPage />} />
-        <Route path="/" element={<IndexPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+      <Switch>
+        
+        <Route path="/:deptid/sem/:semid" exact>
+          <GpaCalculatePage />
+        </Route>
+        <Route path="/:deptid" exact>
+          <SemestersPage />
+        </Route>
+        <Route path="/" exact>
+          <IndexPage />
+        </Route>
+        <Route path="*">
+          <NotFoundPage />
+        </Route>
+      </Switch>
       <div className="d-flex mb-5 justify-content-center text-light">
         Icons from{" "}
         <a
@@ -28,7 +37,7 @@ function App() {
           www.flaticon.com
         </a>
       </div>
-    </>
+    </Router>
   );
 }
 
