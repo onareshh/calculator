@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import IndexPage from './pages/IndexPage';
+import SemestersPage from './pages/SemestersPage';
+import GpaCalculatePage from './pages/GpaCalculatePage';
+import NavBar from './components/NavBar';
+import NotFoundPage from './pages/NotFoundPage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/:deptid/sem/:semid" element={<GpaCalculatePage />} />
+        <Route path="/:deptid" element={<SemestersPage />} />
+        <Route path="/" element={<IndexPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      <div className="d-flex mb-5 justify-content-center text-light">
+        Icons from{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="ms-2"
           target="_blank"
-          rel="noopener noreferrer"
+          href="https://www.flaticon.com/"
+          title="Flaticon"
+          rel="noreferrer"
         >
-          Learn React
+          www.flaticon.com
         </a>
-      </header>
-    </div>
+      </div>
+    </>
   );
 }
 
